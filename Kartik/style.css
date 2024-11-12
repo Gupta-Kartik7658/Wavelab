@@ -1,3 +1,9 @@
+[data-testid="stSidebar"]{
+    visibility: hidden;
+}
+[data-testid="stBaseButton-headerNoPadding"] {
+    visibility: hidden;
+}
 
 .title-container {
     padding: 40px 0 20px;
