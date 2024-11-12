@@ -12,6 +12,10 @@
     position: relative;
     margin-top: -100px; /* Decrease the gap between the logo and text */
 }
+.title-container h2{
+    font-size:45px;
+}
+
 
 
 .logo-pop {
