@@ -8,13 +8,13 @@ import pathlib
 from PIL import Image
 import base64
 
-st.set_page_config(page_title="WaveLab",initial_sidebar_state="collapsed",page_icon="Kartik\logo (1).png")
+st.set_page_config(page_title="WaveLab",initial_sidebar_state="collapsed",page_icon="Kartik/logo (1).png")
 
 def load_css(file):
     with open(file) as f:
         st.html(f"<style>{f.read()}</style>")
 
-csspath = pathlib.Path("Kartik\style.css")
+csspath = pathlib.Path("Kartik/style.css")
 load_css(csspath)
 
 # Convert the image to Base64
@@ -43,7 +43,7 @@ st.markdown(
 # Display buttons horizontally with proper centering
 st.markdown("""
 <div class = "button-container">
-    <a href="Probability" class = "button-container-probability">Probability</a>
+    <a href="Probability" target="_self" class = "button-container-probability">Probability</a>
     <a href="#" class = "button-container-statistics">Statistics</a>
     <a href="#" class = "button-container-physics">Physics</a>
 </div>
