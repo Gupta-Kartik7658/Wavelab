@@ -5,6 +5,14 @@
     visibility: hidden;
 }
 
+.large-font {
+    font-size: 24px;
+}
+
+/* Restrict the graph's width to between 25% and 75% of the page */
+
+
+
 .title-container {
     padding: 40px 0 20px;
     text-align: center;

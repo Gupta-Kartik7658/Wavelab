@@ -22,3 +22,8 @@ st.markdown("""
 <div class = "button-container">
     <a href="GaussianDistribution" target="_self" class = "button-container-probability">Gaussian Distribution</a>
 </div>""",unsafe_allow_html=True)
+
+st.markdown("""
+<div class = "button-container">
+    <a href="LaplacianDistribution" target="_self" class = "button-container-probability">Laplacian Distribution</a>
+</div>""",unsafe_allow_html=True)
