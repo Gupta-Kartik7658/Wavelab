@@ -74,6 +74,15 @@ with col1:
     $$ 
     f(x) = \\frac{1}{2b} e^{-\\frac{|x - \\mu|}{b}}
     $$
+     The cumulative distribution function (CDF), which represents the probability that a random variable $X$ will be less than or equal to a given value $x$, is:
+
+    $$ 
+    F(x) = 
+    \\begin{cases} 
+        0.5 e^{\\frac{x - \\mu}{b}} & \\text{for } x < \\mu \\\\
+        1 - 0.5 e^{-\\frac{x - \\mu}{b}} & \\text{for } x \\geq \\mu 
+    \\end{cases}
+    $$
 
     In this formula:
     - $\\mu$: the mean, representing the central value.
@@ -87,7 +96,7 @@ with col2:
     mu = st.slider('Mean ($\mu$)', -10.0, 10.0, 0.0)  
     sigma = st.slider('The Scale Parameter ($b$)', 0.1, 10.0, 1.0)  
     N = st.slider('Number of Samples ($N$)', 100000, 10000000, 2000000, step=10000)  
-    xlim = st.slider('X-Axis Limit', 5.0, 40.0, step=2.5) 
+    xlim = st.slider('X-Axis Limit', 5.0, 60.0, step=2.5) 
 
 
 st.markdown(f"""<br><br>""",unsafe_allow_html=True)

@@ -7,6 +7,7 @@ import time
 import pathlib
 from PIL import Image
 import base64
+import pyperclip
 
 
 st.set_page_config(page_title="Gaussian Distribution", initial_sidebar_state="collapsed", page_icon="Kartik/logo (1).png", layout="wide")
@@ -59,7 +60,7 @@ def gaussian_distribution(col1,col2,mu=0, sigma=1, N=2000000,xlim=5):
         st.pyplot(fig1, use_container_width=False)
     with col2:
         st.pyplot(fig2, use_container_width=False)
-
+    return Z
 
 
 st.markdown(f"""
@@ -79,6 +80,11 @@ with col1:
     $$ 
     f(x) = \\frac{1}{\\sqrt{2 \\pi \\sigma^2}} e^{ -\\frac{(x - \\mu)^2}{2 \\sigma^2} }
     $$
+    The cumulative distribution function (CDF), which represents the probability that a random variable $X$ will be less than or equal to a given value $x$, is:
+
+    $$ 
+    F(x) = \\frac{1}{2} \\left[1 + \\text{erf} \\left( \\frac{x - \\mu}{\\sqrt{2 \\sigma^2}} \\right) \\right]
+    $$
 
     In this formula:
     - $\\mu$: the mean, representing the central value.
@@ -97,4 +103,5 @@ with col2:
 
 st.markdown(f"""<br><br>""",unsafe_allow_html=True)
 col1,col2 = st.columns(2)
-gaussian_distribution(col1,col2,mu, sigma, N,xlim)
+Z = gaussian_distribution(col1,col2,mu, sigma, N,xlim)
+
