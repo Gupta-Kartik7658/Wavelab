@@ -51,19 +51,19 @@ def gaussian_distribution(mu=0, sigma=1, N=2000000):
     ax2.set_xlabel('X')
     ax2.set_ylabel('$F_x(x)$')
     ax2.set_title('Standard Gaussian Distribution CDF')
-    ax2.grid(True)  # Add grid to the CDF plot
-    ax2.set_facecolor('#f7f7f7')  # Set background color
+    ax2.grid(True)  
+    ax2.set_facecolor('#f7f7f7')  
 
-    # Show the plots
+    
     st.pyplot(fig)
 
-# Streamlit UI elements
+
 st.title("Gaussian Distribution Generator")
 
-# Sliders for mean (mu), standard deviation (sigma), and number of samples (N)
-mu = st.slider('Mean (mu)', -10.0, 10.0, 0.0)  # Range from -10 to 10, default 0
-sigma = st.slider('Standard Deviation (sigma)', 0.1, 10.0, 1.0)  # Range from 0.1 to 10, default 1
-N = st.slider('Number of Samples (N)', 100000, 10000000, 2000000, step=10000)  # Range for N, default 2 million
+
+mu = st.slider('Mean (mu)', -10.0, 10.0, 0.0)  
+sigma = st.slider('Standard Deviation (sigma)', 0.1, 10.0, 1.0)  
+N = st.slider('Number of Samples (N)', 100000, 10000000, 2000000, step=10000)  
 
 # Automatically generate the Gaussian distribution as the user adjusts sliders
 gaussian_distribution(mu, sigma, N)
