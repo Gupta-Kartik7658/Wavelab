@@ -7,7 +7,6 @@ import time
 import pathlib
 from PIL import Image
 import base64
-import pyperclip
 
 
 st.set_page_config(page_title="Gaussian Distribution", initial_sidebar_state="collapsed", page_icon="Kartik/logo (1).png", layout="wide")
