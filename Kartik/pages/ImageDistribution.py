@@ -20,8 +20,19 @@ load_css(csspath)
 
 st.markdown(f"""<div class = "title-container">
             <h2>Image Distribution</h2></div>
-            """)
+            """,unsafe_allow_html=True)
 
 
-def imageDistribution(image):
-    mat = im.imread(image)
+
+
+
+mat = im.imread("Kartik/logo (1).png")
+r = mat[:,:,0]
+g = mat[:,:,1]
+b = mat[:,:,2]
+
+
+fig,ax1 = plt.subplots(figsize=(8,6))
+ax1.hist(r, bins=100, histtype="stepfilled", density="True", range=[0, 255])
+ax1.grid(True)
+st.pyplot(fig)
