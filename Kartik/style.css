@@ -1,3 +1,17 @@
+[data-testid="stSidebar"]{
+    visibility: hidden;
+}
+[data-testid="stBaseButton-headerNoPadding"] {
+    visibility: hidden;
+}
+
+.large-font {
+    font-size: 24px;
+}
+
+/* Restrict the graph's width to between 25% and 75% of the page */
+
+
 
 .title-container {
     padding: 40px 0 20px;
@@ -6,6 +20,10 @@
     position: relative;
     margin-top: -100px; /* Decrease the gap between the logo and text */
 }
+.title-container h2{
+    font-size:45px;
+}
+
 
 
 .logo-pop {
@@ -32,7 +50,7 @@
 }
 
 .title-container p {
-    font-size: 24px; /* Increased subtitle font size */
+    font-size: 1.5em; /* Increased subtitle font size */
     margin-top: 10px;
 }
 
@@ -61,13 +79,27 @@
     align-items: center; /* Centers the text vertically */
 }
 
+.button-container-upload {
+    text-decoration: none; /* Removes the underline */
+    background-color: #05162C; /* Button color */
+    color: white;
+    border-radius: 8px;
+    font-size: 30px; /* Increased button font size */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    width: 50px;
+    height: 30px;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+}
+
 .button-container-probability {
     margin-right: 15px;
 }
 
 .button-container-statistics {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 .button-container-physics {
