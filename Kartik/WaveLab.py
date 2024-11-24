@@ -1,7 +1,7 @@
 import streamlit as st
 import pathlib
 from PIL import Image
-
+import base64
 st.set_page_config(page_title="WaveLab",initial_sidebar_state="collapsed",page_icon="Kartik/logo (1).png")
 
 def load_css(file):
