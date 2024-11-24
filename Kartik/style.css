@@ -77,6 +77,7 @@
     display: flex; /* Enables flexbox */
     justify-content: center; /* Centers the text horizontally */
     align-items: center; /* Centers the text vertically */
+    text-align: center;
 }
 
 .button-container-upload {
@@ -108,7 +109,8 @@
 
 .button-container a:hover {
     text-decoration: none;
-    background-color: #102B4A; /* Button hover color */
+    /* font-weight: lighter; */
+    /* background-color: #102B4A; Button hover color */
     color: #FF4B4B;
 }
 
