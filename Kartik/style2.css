@@ -1,0 +1,32 @@
+[data-testid="stBaseButton-headerNoPadding"] {
+    visibility: hidden;
+}
+
+.large-font {
+    font-size: 24px;
+}
+
+/* Restrict the graph's width to between 25% and 75% of the page */
+
+
+
+.title-container {
+    padding: 40px 0 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: -100px; /* Decrease the gap between the logo and text */
+    margin-bottom: -40px;
+}
+.title-container-new {
+    padding: 40px 0 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-bottom: -40px;
+}
+.title-container-new h2,
+.title-container h2{
+    font-size:45px;
+}
+

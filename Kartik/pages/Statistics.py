@@ -15,3 +15,9 @@ st.markdown("""
     <a href="ImageDistribution" target="_self" class = "button-container-probability">Image Distribution</a>
 </div>
 """, unsafe_allow_html=True)
+
+st.markdown("""
+<div class = "button-container">
+    <a href="PrincipalComponentAnalysis" target="_self" class = "button-container-probability">Principal Component Analysis</a>
+</div>
+""", unsafe_allow_html=True)

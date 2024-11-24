@@ -16,11 +16,6 @@ csspath = pathlib.Path("Kartik/style.css")
 load_css(csspath)
 
 
-import numpy as np
-import plotly.graph_objects as go
-from scipy.integrate import dblquad
-import streamlit as st
-
 def bivariate_normal_distribution(col1, col2, mx=3, my=5, stdx=0.25, stdy=0.5, xlim=5, ylim=5, grid_points=50):
     x_vals = np.linspace(-xlim, xlim, grid_points)
     y_vals = np.linspace(-ylim, ylim, grid_points)
