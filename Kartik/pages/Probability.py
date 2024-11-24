@@ -1,13 +1,5 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as snb
-import time
 import pathlib
-from PIL import Image
-import base64
-from pathlib import Path
 
 st.set_page_config(page_title="WaveLab",initial_sidebar_state="collapsed",page_icon="Kartik/logo (1).png")
 
@@ -24,6 +16,6 @@ st.markdown("""
     <a href="LaplacianDistribution" target="_self" class = "button-container-probability">Laplacian Distribution</a>
     <a href="ExponentialDistribution" target="_self" class = "button-container-probability">Exponential Distribution</a>
     <a href="BivariateGaussianDistribution" target="_self" class = "button-container-probability">Bivariate Standard Normal</a>
-    
+    <a href="ChebyshevInequality" target="_self" class = "button-container-probability">Chebyshev's Inequality</a>
 </div>
 """, unsafe_allow_html=True)

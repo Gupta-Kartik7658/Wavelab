@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 import pathlib
-import time
 import imageio.v3 as im
 
 # Set page configuration

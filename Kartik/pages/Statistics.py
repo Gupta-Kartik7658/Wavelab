@@ -1,12 +1,4 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as snb
-import time
-import pathlib
-from PIL import Image
-import base64
 from pathlib import Path
 
 st.set_page_config(page_title="Probability",initial_sidebar_state="collapsed",page_icon="Kartik/logo (1).png")
