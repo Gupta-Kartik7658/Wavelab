@@ -36,5 +36,6 @@ st.markdown(f"""
 st.markdown("""
 <div class = "button-container">
     <a href="ChebyshevInequality" target="_self" class = "button-container-probability">Chebyshev's Inequality</a>
+    <a href="MarkovInequality" target="_self" class = "button-container-probability">Markov's Inequality</a>
 </div>
 """,unsafe_allow_html=True)

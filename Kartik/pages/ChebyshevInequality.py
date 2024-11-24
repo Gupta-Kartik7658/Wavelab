@@ -100,6 +100,7 @@ with col2:
         where=(x_vals >= lower_bound) & (x_vals <= upper_bound),
         color="blue",
         alpha=0.5,
+        label = "Leftover Probability",
     )
     ax.fill_between(
         x_vals,
@@ -107,6 +108,7 @@ with col2:
         where=(x_vals < lower_bound) | (x_vals > upper_bound),
         color="red",
         alpha=0.5,
+        label = "Enclosed Probability",
     )
 
     # Annotate lines
@@ -118,6 +120,7 @@ with col2:
     ax.set_title(f"Chebyshev's Theorem for {distribution} Distribution", fontsize=16, fontweight="bold")
     ax.set_xlabel("X", fontsize=14)
     ax.set_ylabel("Density", fontsize=14)
+    ax.legend()
 
     # Display the plot
     st.pyplot(fig)
