@@ -27,7 +27,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown(f"""
-        <div class="title-container">
+        <div class="title-container-new">
             <h2>Inequality Theorems</h2>
         </div>
         """, unsafe_allow_html=True)

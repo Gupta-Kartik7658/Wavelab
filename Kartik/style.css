@@ -19,7 +19,16 @@
     color: white;
     position: relative;
     margin-top: -100px; /* Decrease the gap between the logo and text */
+    margin-bottom: -40px;
 }
+.title-container-new {
+    padding: 40px 0 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-bottom: -40px;
+}
+.title-container-new h2,
 .title-container h2{
     font-size:45px;
 }
@@ -43,12 +52,14 @@
     animation: pop 3s infinite;
 }
 
+.title-container-new h1,
 .title-container h1 {
     font-size: 50px;
     font-weight: bold;
     margin: 0;
 }
 
+.title-container-new p,
 .title-container p {
     font-size: 1.5em; /* Increased subtitle font size */
     margin-top: 10px;
