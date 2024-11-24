@@ -48,7 +48,7 @@ with col1:
         std_dev = st.slider(label="Standard Deviation(σ)", min_value = 1.0, max_value = 5.0, step = 0.5,value = 1.0)
         X = np.random.normal(mean, std_dev, 100000)
     elif distribution == "Exponential":
-        rate = st.slider(label="Rate Parameter (λ)", min_value = 0.0, max_value = 5.0, step = 0.5,value = 0.0)
+        rate = st.slider(label="Rate Parameter (λ)", min_value = 0.1, max_value = 5.0, step = 0.5,value = 0.1)
         X = np.random.exponential(1 / rate, 100000)
     elif distribution == "Uniform":
         lower = st.slider(label="Lower Bound (a)", min_value = 0.0, max_value = 5.0, step = 0.5,value = 0.0)
