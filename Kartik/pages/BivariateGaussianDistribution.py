@@ -1,11 +1,12 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
+import plotly.graph_objects as go 
 from scipy.integrate import dblquad
 import pathlib
 
 
-st.set_page_config(page_title="Gaussian Distribution", initial_sidebar_state="collapsed", page_icon="Kartik/logo (1).png", layout="wide")
+st.set_page_config(page_title="Bivariate Gaussian Distribution", initial_sidebar_state="collapsed", page_icon="Kartik/logo (1).png", layout="wide")
 
 
 def load_css(file):
@@ -16,7 +17,12 @@ csspath = pathlib.Path("Kartik/style.css")
 load_css(csspath)
 
 
-def bivariate_normal_distribution(col1, col2, mx=3, my=5, stdx=0.25, stdy=0.5, xlim=5, ylim=5, grid_points=100):
+import numpy as np
+import plotly.graph_objects as go
+from scipy.integrate import dblquad
+import streamlit as st
+
+def bivariate_normal_distribution(col1, col2, mx=3, my=5, stdx=0.25, stdy=0.5, xlim=5, ylim=5, grid_points=50):
     x_vals = np.linspace(-xlim, xlim, grid_points)
     y_vals = np.linspace(-ylim, ylim, grid_points)
     x, y = np.meshgrid(x_vals, y_vals)
@@ -42,41 +48,70 @@ def bivariate_normal_distribution(col1, col2, mx=3, my=5, stdx=0.25, stdy=0.5, x
                 -ylim, y_vals[i]   # y limits from -ylim to y_val[i]
             )
 
-    # Plot the PDF
-    fig1, ax1 = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(6, 6))
-    ax1.plot_surface(x, y, fxy, cmap="viridis", edgecolor="none")
-    ax1.set_title("PDF of Bivariate Normal Distribution")
-    ax1.set_xlabel('X')
-    ax1.set_ylabel('Y')
-    ax1.set_zlabel('f(x, y)')
+    # Plot the PDF using Plotly
+    pdf_fig = go.Figure(
+        data=[
+            go.Surface(
+                z=fxy,
+                x=x_vals,
+                y=y_vals,
+                colorscale="Viridis",
+                showscale=False
+            )
+        ]
+    )
+    pdf_fig.update_layout(
+        # font=dict(color="black"),  # Set text color to black
+        title="PDF of Bivariate Normal Distribution",
+        width = 800,
+        height = 800, 
+            
+        # plot_bgcolor="white",  # Set the inner plot background color to white
+        scene=dict(
+            xaxis_title='X',
+            yaxis_title='Y',
+            zaxis_title='f(x, y)',
+            # xaxis=dict(range=[-xlim, xlim]),
+            # yaxis=dict(range=[-ylim, ylim]),
+        )
+    )
 
-    # Set fixed view angle
-    ax1.view_init(elev=30, azim=45)  # Set elevation and azimuth for consistent viewpoint
+    # Plot the CDF using Plotly
+    cdf_fig = go.Figure(
+        data=[
+            go.Surface(
+                z=cdf,
+                x=x_vals,
+                y=y_vals,
+                colorscale="Viridis",
+                showscale=False
+            )
+        ]
+    )
+    cdf_fig.update_layout(
+        title="CDF of Bivariate Normal Distribution",
+        width = 800,
+        height = 800,
+        # font=dict(color="black"),  # Set text color to black
+        # plot_bgcolor="white",  # Set the inner plot background color to white
+        scene=dict(
+            xaxis_title='X',
+            yaxis_title='Y',
+            zaxis_title='F(x, y)',
+            # xaxis=dict(range=[-xlim, xlim]),
+            # yaxis=dict(range=[-ylim, ylim]),
+        )
+    )
 
-    ax1.set_xlim([-xlim, xlim])  # Set X-axis limits
-    ax1.set_ylim([-ylim, ylim])  # Set Y-axis limits
-    
-
-    # Plot the CDF
-    fig2, ax2 = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(6, 6))
-    ax2.plot_surface(x, y, cdf, cmap="viridis", edgecolor="none")
-    ax2.set_title("CDF of Bivariate Normal Distribution")
-    ax2.set_xlabel('X')
-    ax2.set_ylabel('Y')
-    ax2.set_zlabel('F(x, y)')
-
-    # Set fixed view angle
-    ax2.view_init(elev=30, azim=45)  # Set elevation and azimuth for consistent viewpoint
-
-    ax2.set_xlim([-xlim, xlim])  # Set X-axis limits
-    ax2.set_ylim([-ylim, ylim])  # Set Y-axis limits
-    
-
-    # Display the plots in Streamlit    
+    # Display the plots in Streamlit
     with col1:
-        st.pyplot(fig1)
+        st.plotly_chart(pdf_fig, use_container_width=True)
     with col2:
-        st.pyplot(fig2)
+        st.plotly_chart(cdf_fig, use_container_width=True)
+
+# Example usage in Streamlit:
+# bivariate_normal_distribution(col1, col2)
+
 
 # Example usage in Streamlit:
 
@@ -118,13 +153,16 @@ with col1:
 
 with col2:
     mux = st.slider('Mean in x ($\mu_x$)', -10.0, 10.0, 0.0)  
+    st.markdown(f"""<br>""", unsafe_allow_html=True)
     muy = st.slider('Mean in y ($\mu_y$)', -10.0, 10.0, 0.0)  
+    st.markdown(f"""<br>""", unsafe_allow_html=True)
     stdx = st.slider('Standard Deviation ($\sigma_x$)', 0.1, 10.0, 1.0) 
+    st.markdown(f"""<br>""", unsafe_allow_html=True)
     stdy = st.slider('Standard Deviation ($\sigma_y$)', 0.1, 10.0, 1.0) 
-    xlim = st.slider('X-Axis Limit', 5.0, 40.0, step=2.5) 
-    ylim = st.slider('Y-Axis Limit', 5.0, 40.0, step=2.5) 
-    grid_points = st.slider('Grid Points', 5, 50, 30, step=5) 
+    # xlim = st.slider('X-Axis Limit', 5.0, 40.0, step=2.5) 
+    # ylim = st.slider('Y-Axis Limit', 5.0, 40.0, step=2.5) 
+    # grid_points = st.slider('Grid Points', 5, 50, 30, step=5) 
 
 st.markdown(f"""<br>""", unsafe_allow_html=True)
 col1, col2 = st.columns(2)
-bivariate_normal_distribution(col1, col2, mux, muy, stdx, stdy, xlim, ylim, grid_points)
+bivariate_normal_distribution(col1, col2, mux, muy, stdx, stdy)
