@@ -39,6 +39,6 @@ st.markdown("""
 <div class = "button-container">
     <a href="Probability" target="_self" class = "button-container-probability">Probability</a>
     <a href="Statistics" target="_self" class = "button-container-statistics">Statistics</a>
-    <a href="#" class = "button-container-physics">Physics</a>
+    <a href="#" class = "button-container-physics">Image Distribution</a>
 </div>
 """, unsafe_allow_html=True)

@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pathlib
 import imageio.v3 as im
+import time
 
 # Set page configuration
 st.set_page_config(page_title="Image Distribution", initial_sidebar_state="collapsed", 
