@@ -109,6 +109,7 @@
 .button-container a:hover {
     text-decoration: none;
     background-color: #102B4A; /* Button hover color */
+    color: #FF4B4B;
 }
 
 @keyframes pop {
