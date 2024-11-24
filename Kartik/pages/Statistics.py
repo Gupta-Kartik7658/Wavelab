@@ -1,5 +1,5 @@
 import streamlit as st
-from pathlib import Path
+import pathlib
 
 st.set_page_config(page_title="Probability",initial_sidebar_state="collapsed",page_icon="Kartik/logo (1).png")
 
