@@ -47,6 +47,8 @@ st.markdown(
     <div class="title-container">
         <br>
         <br>
+        <br>
+        <br>
         <p>Developed By - Abhinav Chhajed (202351001), Kartik Gupta(202351056), Jamil Sayyed(202451080)</p>
     </div>
     """,
