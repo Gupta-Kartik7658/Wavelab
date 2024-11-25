@@ -42,4 +42,11 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+st.markdown(
+    f"""
+        <br>
+        <br>
+    """,
+    unsafe_allow_html=True
+)
 st.write("Designed By - Abhinav Chhajed (202351001), Kartik Gupta(202351056), Jamil Sayyed(202451080)")
