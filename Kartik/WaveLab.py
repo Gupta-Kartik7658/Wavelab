@@ -49,6 +49,8 @@ st.markdown(
         <br>
         <br>
         <br>
+        <br>
+        <br>
         <p>Developed By : </p>
         <p>Abhinav Chhajed (202351001)</p>
         <p>Kartik Gupta (202351056)</p>
