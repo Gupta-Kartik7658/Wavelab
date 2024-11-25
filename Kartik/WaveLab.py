@@ -49,4 +49,4 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.write("Designed By - Abhinav Chhajed (202351001), Kartik Gupta(202351056), Jamil Sayyed(202451080)")
+st.write("Developed By - Abhinav Chhajed (202351001), Kartik Gupta(202351056), Jamil Sayyed(202451080)")
