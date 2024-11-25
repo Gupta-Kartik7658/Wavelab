@@ -44,9 +44,11 @@ st.markdown("""
 
 st.markdown(
     f"""
+    <div class="title-container">
         <br>
         <br>
+        <p>Developed By - Abhinav Chhajed (202351001), Kartik Gupta(202351056), Jamil Sayyed(202451080)</p>
+    </div>
     """,
     unsafe_allow_html=True
 )
-st.write("Developed By - Abhinav Chhajed (202351001), Kartik Gupta(202351056), Jamil Sayyed(202451080)")
