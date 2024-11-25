@@ -49,7 +49,10 @@ st.markdown(
         <br>
         <br>
         <br>
-        <p>Developed By - Abhinav Chhajed (202351001), Kartik Gupta(202351056), Jamil Sayyed(202451080)</p>
+        <p>Developed By : </p>
+        <p>Abhinav Chhajed (202351001)</p>
+        <p>Kartik Gupta (202351056)</p>
+        <p>Jamil Sayyed (202451080)</p>
     </div>
     """,
     unsafe_allow_html=True
