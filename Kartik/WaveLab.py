@@ -52,8 +52,8 @@ st.markdown(
         <br>
         <br>
         <p>Developed By : </p>
-        <p>Abhinav Chhajed (202351001)</p>
         <p>Kartik Gupta (202351056)</p>
+        <p>Abhinav Chhajed (202351001)</p>
         <p>Jamil Sayyed (202451080)</p>
     </div>
     """,
