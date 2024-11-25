@@ -42,3 +42,5 @@ st.markdown("""
     <a href="#" class = "button-container-physics">Image Processing</a>
 </div>
 """, unsafe_allow_html=True)
+
+st.write("Designed By - Abhinav Chhajed (202351001), Kartik Gupta(202351056), Jamil Sayyed(202451080)")
