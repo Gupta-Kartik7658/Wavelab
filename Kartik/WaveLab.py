@@ -33,7 +33,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
 # Display buttons horizontally with proper centering
 st.markdown("""
 <div class = "button-container">
