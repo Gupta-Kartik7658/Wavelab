@@ -27,7 +27,7 @@ st.markdown(
         <img src="{logo_base64}" class="logo-pop" alt="WaveLAB Logo">
         <br>
         <br>
-        <p>A Personalised and Customizable Tool-kit exclusively for IIIT Vadodara Students</p>
+        <p>A Personalised Interactive Tool-kit exclusively for IIIT Vadodara Students</p>
     </div>
     """,
     unsafe_allow_html=True
