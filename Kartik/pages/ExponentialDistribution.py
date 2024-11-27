@@ -18,11 +18,7 @@ load_css(csspath)
 def Exponential_distribution(col1,col2, lambda_v=1, N=2000000,xlim=5):
    
     U = np.random.rand(N)
-
-    
     Z =  -np.log(U)/lambda_v
-
-   
     fig1, ax1 = plt.subplots(figsize=(8, 3))  
     fig2, ax2 = plt.subplots(figsize=(8 ,3))
 

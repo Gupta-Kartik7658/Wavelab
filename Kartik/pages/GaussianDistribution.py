@@ -1,6 +1,5 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
 import plotly.express as px
 import pathlib
 
@@ -28,16 +27,23 @@ def gaussian_distribution(col1,col2,mu=0, sigma=1, N=2000000,xlim=5):
     
     Z = mu + sigma * (Z1 * Z2)
     
-    fig1 = px.histogram(Z, nbins=50, title="Histogram of Central Limit Theorem", histnorm="probability density")
+    fig1 = px.histogram(Z, nbins=100, title="Histogram of Central Limit Theorem", histnorm="probability density")
     fig1.update_layout(
         xaxis_title="Value",
         yaxis_title="Probability",
         bargap=0.1,
-        showlegend=False  # Remove legend
+        showlegend=False,
+        xaxis_range=[-xlim, xlim],           
     )
-
-   
-    fig2, ax2 = plt.subplots(figsize=(8 ,3))
+    
+    fig1 = px.histogram(Z, nbins=100, title="Histogram of Central Limit Theorem", histnorm="cumulative density")
+    fig1.update_layout(
+        xaxis_title="Value",
+        yaxis_title="Cumulative Distributive",
+        bargap=0.1,
+        showlegend=False,
+        xaxis_range=[-xlim, xlim],           
+    ) 
 
    
     # ax1.hist(Z, bins=100, histtype="stepfilled", density="True", range=[-xlim, xlim])
