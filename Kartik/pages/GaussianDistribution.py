@@ -39,7 +39,7 @@ def gaussian_distribution(col1,col2,mu=0, sigma=1, N=2000000,xlim=5):
     fig2 = px.histogram(Z, nbins=100, title="Histogram of Central Limit Theorem", histnorm="cumulative density")
     fig2.update_layout(
         xaxis_title="Value",
-        yaxis_title="Cumulative Distributive",
+        yaxis_title="Cumulative probability",
         bargap=0.1,
         showlegend=False,
         xaxis_range=[-xlim, xlim],           
