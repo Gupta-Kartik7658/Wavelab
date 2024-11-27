@@ -12,7 +12,7 @@ load_css(csspath)
 
 st.markdown(f"""
         <div class="title-container">
-            <h2>Probability Distributions</h2>
+            <h2>Univariate Distributions</h2>
         </div>
         """, unsafe_allow_html=True)
 
@@ -21,10 +21,24 @@ st.markdown("""
     <a href="GaussianDistribution" target="_self" class = "button-container-probability">Gaussian Distribution</a>
     <a href="LaplacianDistribution" target="_self" class = "button-container-probability">Laplacian Distribution</a>
     <a href="ExponentialDistribution" target="_self" class = "button-container-probability">Exponential Distribution</a>
-    <a href="BivariateGaussianDistribution" target="_self" class = "button-container-probability">Bivariate Standard Normal</a>
+    
     
 </div>
 """, unsafe_allow_html=True)
+
+st.markdown(f"""
+        <div class="title-container-new">
+            <h2>Bivariate Distributions</h2>
+        </div>
+        """, unsafe_allow_html=True)
+
+
+st.markdown("""
+<div class = "button-container">
+    <a href="BivariateGaussianDistribution" target="_self" class = "button-container-probability">Bivariate Standard Normal</a>
+    <a href="BivariateLaplacianDistribution" target="_self" class = "button-container-probability">Bivariate Laplacian Normal</a>
+</div>
+""",unsafe_allow_html=True)
 
 st.markdown(f"""
         <div class="title-container-new">

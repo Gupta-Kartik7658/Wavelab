@@ -14,13 +14,8 @@ csspath = pathlib.Path("Kartik/style.css")
 load_css(csspath)
 
 def laplacian_distribution(col1,col2,mu=0, b=1, N=2000000,xlim=5):
-   
     U1 = np.random.rand(N)
-
-    
     Z = mu - b * np.sign(U1 - 0.5) * np.log(1 - 2 * np.abs(U1 - 0.5))
-
-   
     fig1 = px.histogram(Z, nbins=100, title="Probability Distributive Function", histnorm="probability density")
     fig1.update_layout(
         xaxis_title="Value",
@@ -44,17 +39,13 @@ def laplacian_distribution(col1,col2,mu=0, b=1, N=2000000,xlim=5):
     with col2:
         st.plotly_chart(fig2)
 
-
-
 st.markdown(f"""
         <div class="title-container">
             <h2>Laplacian Distribution</h2>
         </div>
         """, unsafe_allow_html=True)
 
-
 col1, col2 = st.columns(2)
-
 
 with col1:
     st.markdown('''
@@ -88,7 +79,6 @@ with col2:
     sigma = st.slider('The Scale Parameter ($b$)', 0.1, 10.0, 1.0)  
     N = st.slider('Number of Samples ($N$)', 100000, 10000000, 2000000, step=10000)  
     xlim = st.slider('X-Axis Limit', 5.0, 60.0, step=2.5) 
-
 
 st.markdown(f"""<br><br>""",unsafe_allow_html=True)
 col1,col2 = st.columns(2)
