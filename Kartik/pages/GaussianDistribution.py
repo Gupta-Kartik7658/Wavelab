@@ -60,7 +60,7 @@ def gaussian_distribution(col1,col2,mu=0, sigma=1, N=2000000,xlim=5):
 
    
     with col1:
-        st.pyplot(fig1, use_container_width=False)
+        st.plotly_chart(fig1)
     with col2:
         st.pyplot(fig2, use_container_width=False)
     return Z
