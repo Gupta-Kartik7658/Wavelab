@@ -13,7 +13,6 @@ def load_css(file):
 csspath = pathlib.Path("Kartik/style.css")
 load_css(csspath)
 
-
 def laplacian_distribution(col1,col2,mu=0, b=1, N=2000000,xlim=5):
    
     U1 = np.random.rand(N)
