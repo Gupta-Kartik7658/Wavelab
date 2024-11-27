@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
+import plotly.express as px
 import pathlib
 
 
@@ -29,18 +30,25 @@ def gaussian_distribution(col1,col2,mu=0, sigma=1, N=2000000,xlim=5):
     
     
     Z = mu + sigma * (Z1 * Z2)
+    
+    fig1 = px.histogram(Z, nbins=50, title="Histogram of Central Limit Theorem", histnorm="probability density")
+    fig1.update_layout(
+        xaxis_title="Value",
+        yaxis_title="Probability",
+        bargap=0.1,
+        showlegend=False  # Remove legend
+    )
 
    
-    fig1, ax1 = plt.subplots(figsize=(8, 3))  
     fig2, ax2 = plt.subplots(figsize=(8 ,3))
 
    
-    ax1.hist(Z, bins=100, histtype="stepfilled", density="True", range=[-xlim, xlim])
-    ax1.set_xlabel('X')
-    ax1.set_ylabel('$f_x(x)$')
-    ax1.set_title('Standard Gaussian Distribution PDF')
-    ax1.grid(True)  # Add grid to the PDF plot
-    ax1.set_facecolor('#f7f7f7')  # Set background color
+    # ax1.hist(Z, bins=100, histtype="stepfilled", density="True", range=[-xlim, xlim])
+    # ax1.set_xlabel('X')
+    # ax1.set_ylabel('$f_x(x)$')
+    # ax1.set_title('Standard Gaussian Distribution PDF')
+    # ax1.grid(True)  # Add grid to the PDF plot
+    # ax1.set_facecolor('#f7f7f7')  # Set background color
     
     
     ax2.hist(Z, bins=100, cumulative=True, density=True, alpha=0.6, color='g', range=[-xlim, xlim])

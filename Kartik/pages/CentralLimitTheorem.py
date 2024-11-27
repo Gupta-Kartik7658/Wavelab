@@ -121,7 +121,7 @@ st.markdown('''
     $$
     Z = \\frac{\\sum_{i=1}^n X_i - n\\mu}{\\sqrt{n\\sigma^2}} \\to N(0, 1),
     $$
-
+    
     where:
     - $\\sum_{i=1}^n X_i$: The sum of $n$ random variables.
     - $\\mu$: The mean of the random variables.
