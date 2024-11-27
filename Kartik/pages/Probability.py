@@ -36,8 +36,8 @@ st.markdown(f"""
 st.markdown("""
 <div class = "button-container">
     <a href="BivariateGaussianDistribution" target="_self" class = "button-container-probability">Bivariate Standard Normal</a>
-    <a href="BivariateLaplacianDistribution" target="_self" class = "button-container-probability">Bivariate Laplacian Normal</a>
-    <a href="BivariateExponentialDistribution" target="_self" class = "button-container-probability">Bivariate Exponential Normal</a>
+    <a href="BivariateLaplacianDistribution" target="_self" class = "button-container-probability">Independent Bivariate Laplacian</a>
+    <a href="BivariateExponentialDistribution" target="_self" class = "button-container-probability">Independent Bivariate Exponential</a>
 </div>
 """,unsafe_allow_html=True)
 
