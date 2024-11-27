@@ -136,12 +136,11 @@ st.markdown('''
     The WLLN states that for a sequence of IID random variables $X_1, X_2, \\dots, X_n$ with mean $\\mu$:
 
     $$
-    \\bar{X}_n = \\frac{1}{n} \\sum_{i=1}^n X_i \\xrightarrow{p} \\mu \, \\text{as} \, n \\to \\infty,
+    \\bar{X}_n = \\frac{1}{n} \\sum_{i=1}^n X_i \\mu \, \\text{as} \, n \\to \\infty,
     $$
 
     where:
     - $\\bar{X}_n$: The sample mean of $n$ random variables.
-    - $\\xrightarrow{p}$: Convergence in probability.
 
     In simple terms, the WLLN states that the sample mean of a large number of IID random variables will converge to the true mean $\\mu$ as the sample size $n$ increases.
 
