@@ -136,7 +136,7 @@ st.markdown('''
     The WLLN states that for a sequence of IID random variables $X_1, X_2, \\dots, X_n$ with mean $\\mu$:
 
     $$
-    \\bar{X}_n = \\frac{1}{n} \\sum_{i=1}^n X_i \\mu \, \\text{as} \, n \\to \\infty,
+    \\bar{X}_n = \\frac{1}{n} \\sum_{i=1}^n X_i \\xrightarrow{} \\mu \, \\text{as} \, n \\to \\infty,
     $$
 
     where:
