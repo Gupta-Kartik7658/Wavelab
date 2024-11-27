@@ -22,30 +22,28 @@ def laplacian_distribution(col1,col2,mu=0, b=1, N=2000000,xlim=5):
     Z = mu - b * np.sign(U1 - 0.5) * np.log(1 - 2 * np.abs(U1 - 0.5))
 
    
-    fig1, ax1 = plt.subplots(figsize=(8, 3))  
-    fig2, ax2 = plt.subplots(figsize=(8 ,3))
-
-   
-    ax1.hist(Z, bins=100, histtype="stepfilled", density="True", range=[-xlim, xlim])
-    ax1.set_xlabel('X')
-    ax1.set_ylabel('$f_x(x)$')
-    ax1.set_title('Standard Laplacian Distribution PDF')
-    ax1.grid(True)  # Add grid to the PDF plot
-    ax1.set_facecolor('#f7f7f7')  # Set background color
+    fig1 = px.histogram(Z, nbins=100, title="Probability Distributive Function", histnorm="probability density")
+    fig1.update_layout(
+        xaxis_title="Value",
+        yaxis_title="Probability",
+        bargap=0.1,
+        showlegend=False,
+        xaxis_range=[-xlim, xlim],           
+    )
     
+    fig2 = px.histogram(Z, nbins=100, title="Cumulative Distribution Function", histnorm="probability density",cumulative=True)
+    fig2.update_layout(
+        xaxis_title="Value",
+        yaxis_title="Cumulative probability",
+        bargap=0.1,
+        showlegend=False,
+        xaxis_range=[-xlim, xlim],           
+    ) 
     
-    ax2.hist(Z, bins=100, cumulative=True, density=True, alpha=0.6, color='g', range=[-xlim, xlim])
-    ax2.set_xlabel('X')
-    ax2.set_ylabel('$F_x(x)$')
-    ax2.set_title('Standard Laplacian Distribution CDF')
-    ax2.grid(True)  
-    ax2.set_facecolor('#f7f7f7')  
-
-   
     with col1:
-        st.pyplot(fig1, use_container_width=False)
+        st.plotly_chart(fig1)
     with col2:
-        st.pyplot(fig2, use_container_width=False)
+        st.plotly_chart(fig2)
 
 
 
