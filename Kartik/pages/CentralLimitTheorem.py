@@ -119,7 +119,7 @@ st.markdown('''
     Mathematically, this can be written as:
 
     $$
-    Z = \\frac{\\sum_{i=1}^n X_i - n\\mu}{\\sqrt{n\\sigma^2}} \\xrightarrow{d} N(0, 1),
+    Z = \\frac{\\sum_{i=1}^n X_i - n\\mu}{\\sqrt{n\\sigma^2}} \\to N(0, 1),
     $$
 
     where:
