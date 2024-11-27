@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
+import plotly.express as px
 import pathlib
 
 st.set_page_config(page_title="Laplacian Distribution", initial_sidebar_state="collapsed", page_icon="Kartik/logo (1).png", layout="wide")
