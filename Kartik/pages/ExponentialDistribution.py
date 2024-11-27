@@ -27,7 +27,7 @@ def Exponential_distribution(col1,col2, lambda_v=1, N=2000000,xlim=5):
         yaxis_title="Probability",
         bargap=0.1,
         showlegend=False,
-        xaxis_range=[-xlim, xlim],           
+        xaxis_range=[0, xlim],           
     )
     
     fig2 = px.histogram(Z, nbins=100, title="Cumulative Distributive Function", histnorm="probability density",cumulative=True)
@@ -36,7 +36,7 @@ def Exponential_distribution(col1,col2, lambda_v=1, N=2000000,xlim=5):
         yaxis_title="Cumulative probability",
         bargap=0.1,
         showlegend=False,
-        xaxis_range=[-xlim, xlim],           
+        xaxis_range=[0, xlim],           
     ) 
     
     with col1:
