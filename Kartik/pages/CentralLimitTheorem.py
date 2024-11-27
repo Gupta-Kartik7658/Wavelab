@@ -109,7 +109,7 @@ with col[1]:
 
 st.markdown(''' 
             <br>
-    The Central Limit Theorem (CLT) is a fundamental result in probability theory and statistics. It explains how the sum (or average) of a large number of independent and identically distributed (IID) random variables behaves.
+    The \\textbf{Central Limit Theorem} (CLT) is a fundamental result in probability theory and statistics. It explains how the sum (or average) of a large number of independent and identically distributed (IID) random variables behaves.
 
     ### Central Limit Theorem
     The theorem states that:
