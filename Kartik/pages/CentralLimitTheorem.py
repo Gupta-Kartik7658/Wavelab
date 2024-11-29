@@ -82,7 +82,7 @@ with col[0]:
         x_max = parameter[0] * 4  # Approximate range for Poisson distribution
 
     number_of_distributions = st.slider("Number of Distributions to add (N)", min_value=1, max_value=100, step=1, value=5)
-    meanCentred = int(st.checkbox("Mean Centred"))
+    meanCentred = int(st.checkbox("Mean Centred",value=True))
     
 with col[1]:
     X = centralLimitTheorem(distribution, parameter, number_of_distributions, meanCentred)
