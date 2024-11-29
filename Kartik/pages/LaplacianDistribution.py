@@ -13,7 +13,7 @@ def load_css(file):
 csspath = pathlib.Path("Kartik/style.css")
 load_css(csspath)
 
-def laplacian_distribution(col1,col2,mu=0, b=1, N=2000000,xlim=5):
+def laplacian_distribution(col1,col2,mu=0, b=1, N=20000,xlim=5):
     U1 = np.random.rand(N)
     Z = mu - b * np.sign(U1 - 0.5) * np.log(1 - 2 * np.abs(U1 - 0.5))
     fig1 = px.histogram(Z, nbins=100, title="Probability Distributive Function", histnorm="probability density")
@@ -77,7 +77,7 @@ with col1:
 with col2:
     mu = st.slider('Mean ($\mu$)', -10.0, 10.0, 0.0)  
     sigma = st.slider('The Scale Parameter ($b$)', 0.1, 10.0, 1.0)  
-    N = st.slider('Number of Samples ($N$)', 100000, 10000000, 2000000, step=10000)  
+    N = st.slider('Number of Samples ($N$)', 1000, 100000, 20000, step=1000)  
     xlim = st.slider('X-Axis Limit', 5.0, 60.0, step=2.5) 
 
 st.markdown(f"""<br><br>""",unsafe_allow_html=True)

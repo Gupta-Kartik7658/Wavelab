@@ -15,7 +15,7 @@ csspath = pathlib.Path("Kartik/style.css")
 load_css(csspath)
 
 
-def Exponential_distribution(col1,col2, lambda_v=1, N=2000000,xlim=5):
+def Exponential_distribution(col1,col2, lambda_v=1, N=20000,xlim=5):
    
     U = np.random.rand(N)
     Z =  -np.log(U)/lambda_v
@@ -83,7 +83,7 @@ with col1:
 with col2:
     # mu = st.slider('Mean ($\mu$)', -10.0, 10.0, 0.0)  
     lambda_v = st.slider('Lambda Value ($\lambda$)', 0.1, 10.0, 1.0)  
-    N = st.slider('Number of Samples ($N$)', 100000, 10000000, 2000000, step=10000)  
+    N = st.slider('Number of Samples ($N$)', 1000, 100000, 20000, step=1000)  
     xlim = st.slider('X-Axis Limit', 5.0, 40.0, step=2.5) 
 
 
