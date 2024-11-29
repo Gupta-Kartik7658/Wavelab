@@ -15,17 +15,9 @@ def load_css(file):
 csspath = pathlib.Path("Kartik/style.css")
 load_css(csspath)
 
-def gaussian_distribution(col1,col2,mu=0, sigma=1, N=2000000,xlim=5):
+def gaussian_distribution(col1,col2,mu=0, sigma=1, N=20000,xlim=5):
    
-    U1 = np.random.rand(N)
-    U2 = np.random.rand(N)
-
-    
-    Z1 = np.sqrt(-2 * np.log(U1))
-    Z2 = np.cos(2 * np.pi * U2)
-    
-    
-    Z = mu + sigma * (Z1 * Z2)
+    Z = np.random.normal(mu,sigma,N)
     
     fig1 = px.histogram(Z, nbins=100, title="Probability Distributive Function", histnorm="probability density")
     fig1.update_layout(
@@ -86,7 +78,7 @@ with col1:
 with col2:
     mu = st.slider('Mean ($\mu$)', -10.0, 10.0, 0.0)  
     sigma = st.slider('Standard Deviation ($\sigma$)', 0.1, 10.0, 1.0)  
-    N = st.slider('Number of Samples ($N$)', 100000, 10000000, 2000000, step=10000)  
+    N = st.slider('Number of Samples ($N$)', 1000, 100000, 20000, step=1000)  
     xlim = st.slider('X-Axis Limit', 5.0, 40.0, step=2.5) 
 
 
