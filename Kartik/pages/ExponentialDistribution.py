@@ -17,8 +17,7 @@ load_css(csspath)
 
 def Exponential_distribution(col1,col2, lambda_v=1, N=20000,xlim=5):
    
-    U = np.random.rand(N)
-    Z =  -np.log(U)/lambda_v
+    Z =  np.random.exponential(lambda_v,N)
 
    
     fig1 = px.histogram(Z, nbins=100, title="Probability Distributive Function", histnorm="probability density")

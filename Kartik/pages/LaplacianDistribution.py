@@ -14,8 +14,8 @@ csspath = pathlib.Path("Kartik/style.css")
 load_css(csspath)
 
 def laplacian_distribution(col1,col2,mu=0, b=1, N=20000,xlim=5):
-    U1 = np.random.rand(N)
-    Z = mu - b * np.sign(U1 - 0.5) * np.log(1 - 2 * np.abs(U1 - 0.5))
+    Z = np.random.laplace(mu,b,N)
+    
     fig1 = px.histogram(Z, nbins=100, title="Probability Distributive Function", histnorm="probability density")
     fig1.update_layout(
         xaxis_title="Value",
