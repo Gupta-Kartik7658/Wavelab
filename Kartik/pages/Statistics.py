@@ -4,10 +4,13 @@ import pathlib
 st.set_page_config(page_title="Probability",initial_sidebar_state="collapsed",page_icon="Kartik/logo (1).png")
 
 def load_css(file):
-    with open(file) as f:
-        st.html(f"<style>{f.read()}</style>")
+    try:
+        with open(file) as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    except FileNotFoundError:
+        st.error("CSS file not found.")
 
-csspath = pathlib.Path("Kartik/style.css")
+csspath = pathlib.Path("Kartik\\style.css")
 load_css(csspath)
 
 st.markdown(f"""
@@ -19,6 +22,7 @@ st.markdown(f"""
 st.markdown("""
 <div class = "button-container">
     <a href="CentralLimitTheorem" target="_self" class = "button-container-probability">Central Limit Theorem</a>
+    <a href="WeakLawOfLargeNumbers" target="_self" class = "button-container-probability">Weak Law of Large Numbers</a>
 </div>
 """, unsafe_allow_html=True)
 

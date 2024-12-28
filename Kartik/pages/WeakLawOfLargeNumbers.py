@@ -3,7 +3,7 @@ import numpy as np
 import plotly.express as px
 import pathlib
 
-st.set_page_config(page_title="CentralLimitTheorem", initial_sidebar_state="collapsed", page_icon="Kartik/logo (1).png", layout="wide")
+st.set_page_config(page_title="WeakLawOfLargeNumbers", initial_sidebar_state="collapsed", page_icon="Kartik/logo (1).png", layout="wide")
 
 def load_css(file):
     try:
@@ -17,13 +17,13 @@ load_css(csspath)
 
 st.markdown(f"""
         <div class="title-container">
-            <h2>Central Limit Theorem</h2>
+            <h2>Weak Law Of Large Numbers</h2>
         </div>
         """, unsafe_allow_html=True)
 
 col = st.columns(2)
 X = np.zeros(1)
-def centralLimitTheorem(Distribution, parameters, N=10, meanCentered=1):
+def WeakLawOfLargeNumbers(Distribution, parameters, N=10, meanCentered=1):
     X = np.zeros(100000)
     for i in range(N):
         if Distribution == "Gaussian (Normal)":
@@ -85,11 +85,11 @@ with col[0]:
     meanCentred = int(st.checkbox("Mean Centred",value=True))
     
 with col[1]:
-    X = centralLimitTheorem(distribution, parameter, number_of_distributions, meanCentred)
+    X = WeakLawOfLargeNumbers(distribution, parameter, number_of_distributions, meanCentred)
     
     if(meanCentred):
         X = X/number_of_distributions
-        fig = px.histogram(X, nbins=50, title="Histogram of Central Limit Theorem", histnorm="probability density")
+        fig = px.histogram(X, nbins=50, title="Histogram of Weak Law Of Large Numbers", histnorm="probability density")
         fig.update_layout(
             xaxis_title="Value",
             yaxis_title="Probability",
@@ -98,7 +98,7 @@ with col[1]:
             showlegend=False  # Remove legend
         )
     else:
-        fig = px.histogram(X, nbins=50, title="Histogram of Central Limit Theorem", histnorm="probability density")
+        fig = px.histogram(X, nbins=50, title="Histogram of Weak Law Of Large Numbers", histnorm="probability density")
         fig.update_layout(
             xaxis_title="Value",
             yaxis_title="Probability",
@@ -109,28 +109,13 @@ with col[1]:
 
 st.markdown(''' 
             <br>
-    The Central Limit Theorem (CLT) is a fundamental result in probability theory and statistics. It explains how the sum (or average) of a large number of independent and identically distributed (IID) random variables behaves.
+    The Weak Law Of Large Numbers is a fundamental result in probability theory and statistics. It explains how the sum (or average) of a large number of independent and identically distributed (IID) random variables behaves.
 
-    ### Central Limit Theorem
+    ### Weak Law Of Large Numbers
     The theorem states that:
     1. If the random variables $X_1, X_2, \\dots, X_n$ are **independent and identically distributed (IID)** with a finite mean $\\mu$ and finite variance $\\sigma^2$,
     2. Then, as the number of random variables $n$ increases, the distribution of their normalized sum approaches the **standard normal distribution**.
 
-    Mathematically, this can be written as:
-
-    $$
-    Z = \\frac{\\sum_{i=1}^n X_i - n\\mu}{\\sqrt{n\\sigma^2}} \\to N(0, 1),
-    $$
-    
-    where:
-    - $\\sum_{i=1}^n X_i$: The sum of $n$ random variables.
-    - $\\mu$: The mean of the random variables.
-    - $\\sigma^2$: The variance of the random variables.
-    - $N(0, 1)$: The standard normal distribution with mean $0$ and variance $1$.
-
-    This theorem explains why many distributions observed in nature and statistics resemble the **normal distribution**.
-
-    ### Weak Law of Large Numbers (WLLN)
     The **Weak Law of Large Numbers** is closely related to the CLT and provides a foundation for understanding averages.
 
     The WLLN states that for a sequence of IID random variables $X_1, X_2, \\dots, X_n$ with mean $\\mu$:
