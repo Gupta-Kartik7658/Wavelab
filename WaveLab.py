@@ -10,7 +10,7 @@ def load_css(file):
 
 csspath = pathlib.Path("style.css")
 load_css(csspath)
-st.write(csspath)
+
 
 # Convert the image to Base64
 def get_base64_image(image_path):
