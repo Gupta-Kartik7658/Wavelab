@@ -7,14 +7,14 @@ import time
 
 # Set page configuration
 st.set_page_config(page_title="Image Distribution", initial_sidebar_state="collapsed", 
-                   page_icon="Kartik/logo (1).png", layout="wide")
+                   page_icon="logo (1).png", layout="wide")
 
 # Load CSS for styling
 def load_css(file):
     with open(file) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-css_path = pathlib.Path("Kartik/style.css")
+css_path = pathlib.Path("style.css")
 load_css(css_path)
 
 # Title container

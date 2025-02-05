@@ -5,14 +5,14 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pathlib
 
-st.set_page_config(page_title="Bivariate Gaussian Distribution", page_icon="Kartik/logo (1).png", layout="wide")
+st.set_page_config(page_title="Bivariate Gaussian Distribution", page_icon="logo (1).png", layout="wide")
 
 
 def load_css(file):
     with open(file) as f:
         st.html(f"<style>{f.read()}</style>")
 
-csspath = pathlib.Path("Kartik/style2.css")
+csspath = pathlib.Path("style2.css")
 load_css(csspath)
 
 # PCA Function with Exception Handling

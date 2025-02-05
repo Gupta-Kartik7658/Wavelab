@@ -1,7 +1,7 @@
 import streamlit as st
 import pathlib
 
-st.set_page_config(page_title="Probability",initial_sidebar_state="collapsed",page_icon="Kartik/logo (1).png")
+st.set_page_config(page_title="Probability",initial_sidebar_state="collapsed",page_icon="logo (1).png")
 
 def load_css(file):
     try:

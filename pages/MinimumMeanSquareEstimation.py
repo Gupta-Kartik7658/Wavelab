@@ -3,7 +3,7 @@ import numpy as np
 import plotly.express as px
 import pathlib
 
-st.set_page_config(page_title="Minimum Mean Square Error Estimation", initial_sidebar_state="collapsed", page_icon="Kartik/logo (1).png", layout="wide")
+st.set_page_config(page_title="Minimum Mean Square Error Estimation", initial_sidebar_state="collapsed", page_icon="logo (1).png", layout="wide")
 
 def load_css(file):
     try:
@@ -12,7 +12,7 @@ def load_css(file):
     except FileNotFoundError:
         st.error("CSS file not found.")
 
-csspath = pathlib.Path("Kartik/style.css")
+csspath = pathlib.Path("style.css")
 load_css(csspath)
 
 st.markdown(f"""

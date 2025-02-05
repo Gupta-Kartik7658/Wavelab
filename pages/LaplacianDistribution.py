@@ -3,14 +3,14 @@ import numpy as np
 import plotly.express as px
 import pathlib
 
-st.set_page_config(page_title="Laplacian Distribution", initial_sidebar_state="collapsed", page_icon="Kartik/logo (1).png", layout="wide")
+st.set_page_config(page_title="Laplacian Distribution", initial_sidebar_state="collapsed", page_icon="logo (1).png", layout="wide")
 
 
 def load_css(file):
     with open(file) as f:
         st.html(f"<style>{f.read()}</style>")
 
-csspath = pathlib.Path("Kartik/style.css")
+csspath = pathlib.Path("style.css")
 load_css(csspath)
 
 def laplacian_distribution(col1,col2,mu=0, b=1, N=20000,xlim=5):

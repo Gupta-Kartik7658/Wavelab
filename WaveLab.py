@@ -2,13 +2,13 @@ import streamlit as st
 import pathlib
 from PIL import Image
 import base64
-st.set_page_config(page_title="WaveLab",initial_sidebar_state="collapsed",page_icon="Kartik/logo (1).png")
+st.set_page_config(page_title="WaveLab",initial_sidebar_state="collapsed",page_icon="logo (1).png")
 
 def load_css(file):
     with open(file) as f:
         st.html(f"<style>{f.read()}</style>")
 
-csspath = pathlib.Path("Kartik/style.css")
+csspath = pathlib.Path("style.css")
 load_css(csspath)
 
 # Convert the image to Base64
@@ -18,7 +18,7 @@ def get_base64_image(image_path):
     return f"data:image/png;base64,{b64_string}"
 
 
-logo_base64 = get_base64_image("Kartik/logo (1).png") 
+logo_base64 = get_base64_image("logo (1).png") 
 
 
 st.markdown(
@@ -54,7 +54,6 @@ st.markdown(
         <p>Developed By : </p>
         <p>Kartik Gupta (202351056)</p>
         <p>Abhinav Chhajed (202351001)</p>
-        <p>Jamil Sayyed (202451080)</p>
     </div>
     """,
     unsafe_allow_html=True

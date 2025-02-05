@@ -5,14 +5,14 @@ from scipy.integrate import dblquad
 import pathlib
 
 
-st.set_page_config(page_title="Bivariate Gaussian Distribution", initial_sidebar_state="collapsed", page_icon="Kartik/logo (1).png", layout="wide")
+st.set_page_config(page_title="Bivariate Gaussian Distribution", initial_sidebar_state="collapsed", page_icon="logo (1).png", layout="wide")
 
 
 def load_css(file):
     with open(file) as f:
         st.html(f"<style>{f.read()}</style>")
 
-csspath = pathlib.Path("Kartik/style.css")
+csspath = pathlib.Path("style.css")
 load_css(csspath)
 
 
