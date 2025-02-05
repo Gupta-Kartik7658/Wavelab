@@ -1,0 +1,580 @@
+commit c5d0ab1f294e226f489559b1b94e436d8f664a23
+Merge: e6bc837 d2cf979
+Author: Gupta-Kartik7658 <kartik.gupta7658@gmail.com>
+Date:   Wed Feb 5 20:41:29 2025 +0530
+
+    Merge branch 'main' of github.com:Gupta-Kartik7658/Wavelab
+
+commit e6bc837ace6dde60ef95015ebf124e57f532e224
+Author: Gupta-Kartik7658 <kartik.gupta7658@gmail.com>
+Date:   Wed Feb 5 20:41:22 2025 +0530
+
+    Change CSS and Images File Path
+
+commit d2cf97986efbc46141691acd9c65321909d129b3
+Author: Gupta-Kartik7658 <161304105+Gupta-Kartik7658@users.noreply.github.com>
+Date:   Wed Feb 5 20:35:25 2025 +0530
+
+    Added Dev Container Folder
+
+commit 9236faed90391b7da3b9411b9d346649f24af98c
+Author: Gupta-Kartik7658 <kartik.gupta7658@gmail.com>
+Date:   Wed Feb 5 20:34:20 2025 +0530
+
+    Update File Structure
+
+commit b7a38a09b32eb8e5f34dbdb5c0e7db6a90d90592
+Author: Gupta-Kartik7658 <kartik.gupta7658@gmail.com>
+Date:   Wed Feb 5 20:20:02 2025 +0530
+
+    Change The Directory Structure
+
+commit 9eff4025cb6eb9ec64a1f081598236ece593aa92
+Author: Gupta-Kartik7658 <kartik.gupta7658@gmail.com>
+Date:   Sat Dec 28 18:48:12 2024 +0530
+
+    width waghera
+
+commit 0b79dc5cbfbe9dd3abd8ab0bc259c926bc60d381
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Fri Nov 29 14:08:22 2024 +0530
+
+    Contributors
+
+commit 82909af926519041866264b87151a81aece0b1c5
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Fri Nov 29 13:44:36 2024 +0530
+
+    Mean centred
+
+commit 3a7152443810005189449e395cdb4c1e62ea31e5
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Fri Nov 29 13:33:36 2024 +0530
+
+    More optimizations
+
+commit ee4243af150f331036f45432a75ae018c7f4a1e6
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Fri Nov 29 13:31:34 2024 +0530
+
+    Optimization
+
+commit 7840aefa4c067cb2bfba3405724da3968677cbe9
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Fri Nov 29 13:30:00 2024 +0530
+
+    optimization
+
+commit 336c498765e33b31cb001d8ec0d1442bb2178773
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Fri Nov 29 11:39:29 2024 +0530
+
+    Parameter
+
+commit 286bf48e289ad4c5b0354fba44e63d8b510b1c42
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Thu Nov 28 01:04:45 2024 +0530
+
+    Change Button headings
+
+commit 112d084d782b48f58487c27e85f7876793250922
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Thu Nov 28 00:55:35 2024 +0530
+
+    Statistics page headers
+
+commit 357997acf04be0db504aded11b46b460b7dc240d
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Thu Nov 28 00:48:34 2024 +0530
+
+    bivariate Exponential
+
+commit 1e23bce748bf76a6c9d0dab85e8f365d03dfb062
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 23:47:01 2024 +0530
+
+    Bivariate laplacian Distribution
+
+commit 13baf40f860a6cea865ad621d62ce67221b6433a
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 23:17:04 2024 +0530
+
+    Hello
+
+commit ef069bda517f7118302a1f74ccb2f3fac0208346
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 23:15:42 2024 +0530
+
+    plotly graphs me convert kr diye
+
+commit b41c4d7cbb425ad706e6bcade5df24db80ea8752
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 23:13:36 2024 +0530
+
+    Plotly graphs
+
+commit 2c13cbbbd23440ef8d9189edd5f8b616876de83b
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 23:09:01 2024 +0530
+
+    skjnfkjdsjf
+
+commit 1c70accf0d4cefb2125b18b74e4bb94a4a544a2a
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 23:08:01 2024 +0530
+
+    cumulative
+
+commit 9a37b0d0f25e1cc7c3e1abb6dde521ed8dd10acc
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 23:06:38 2024 +0530
+
+    cdf
+
+commit 7bd742b189fc633f7a25b7e545abfd83cf6739a9
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 23:04:30 2024 +0530
+
+    CDF
+
+commit 8f0a7e924c6617af987ac2c6120c875eaf7158e7
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 23:04:01 2024 +0530
+
+    chart
+
+commit e7a8fbfa08117ea66068e8d36e764c401f7c74f9
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 23:03:30 2024 +0530
+
+    plotly
+
+commit 9636df4b245315d664c248bea8c80a9d6e2f546f
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 23:02:52 2024 +0530
+
+    Plotly graph
+
+commit 61c6c716cf907408f2d0331d7f09505a272c4494
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 22:57:47 2024 +0530
+
+    gaussian
+
+commit 0dda8316e49d5ffd2c2bf00d90256439bc22036d
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 22:55:14 2024 +0530
+
+    as
+
+commit 71d5dc9e040f7eda0334bdb484aea5f0cda8a482
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 22:53:44 2024 +0530
+
+    converting to plotly
+
+commit a4caa4d53f57e65d9791e0e26bc4348f6c6c54ac
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 22:51:05 2024 +0530
+
+    unbold
+
+commit bd87fe8a90de7ce9b26a8fa4a6cc5ae2c8b4c12c
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 22:49:39 2024 +0530
+
+    bold
+
+commit 96b9e3cabd2c5370b2784c59e3af73728abfcfd8
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 22:47:20 2024 +0530
+
+    to
+
+commit c085d537cec7a4747e956068100d8f363d52e501
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 22:47:00 2024 +0530
+
+    Bold Text
+
+commit 379fb447eef3bc7f27253a70599b16e6b91f28a4
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 22:46:22 2024 +0530
+
+    converges
+
+commit 81a1373742f0f6d67bfdd6459a6f812756586222
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 22:45:39 2024 +0530
+
+    CLT
+
+commit ec21356bdec8e229e1371087cf1deea3a7823f0e
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 22:44:52 2024 +0530
+
+    Probability
+
+commit df562fde115770e745f8e341b90f61ef5dff6bab
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 22:42:58 2024 +0530
+
+    Central Limit Theorem
+
+commit 4d165b2a88fcc6e572152f54273fbebf5bb37e1c
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 27 21:09:52 2024 +0530
+
+    CLT
+
+commit 62e589ddc96cd9bed2cbeb2ffa065f1ada82f794
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 26 19:29:28 2024 +0530
+
+    done
+
+commit dcb773f096d59189fff2f2fd2852ff73371358ea
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 26 19:24:30 2024 +0530
+
+    des
+
+commit ce0bf59671634151678a0bbb32992784ce13838e
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 26 00:06:30 2024 +0530
+
+    target
+
+commit 6c4f4a825027c3391fb1e4aaefd543935eae956d
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 26 00:05:57 2024 +0530
+
+    linked to the home page
+
+commit 90f8988e5fa19a8693b96515530dfc5385504684
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 26 00:04:12 2024 +0530
+
+    Image processing and colour space converions
+
+commit 165c3fffeeabf1b30b3c4e5c679aa1875922a3d5
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 14:21:53 2024 +0530
+
+    me
+
+commit 01ea45e5e2e50e5bd6b0a84b9647a868ecfcafe5
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 14:21:23 2024 +0530
+
+    Sign 2
+
+commit 3fd39225bd5156901d7e679c7733675a5f0ee054
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 14:19:51 2024 +0530
+
+    signature2
+
+commit c4a44dc4896a7b43d3a5fdc7f74c182c9f7a15e3
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 14:18:12 2024 +0530
+
+    break
+
+commit aa828d61206420cdfd9a9eea11b1818297aac84e
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 14:17:44 2024 +0530
+
+    sp
+
+commit 1612c6d61ffc1eaa3c7c63548e3793422ed2c4e3
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 14:16:58 2024 +0530
+
+    developed
+
+commit 4c91023f01d599a27997a404e0428b812e92acfa
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 14:16:25 2024 +0530
+
+    soso
+
+commit 73a31de6cb7d67056489e5c6207ba4d1f0cb557f
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 14:15:44 2024 +0530
+
+    hoja
+
+commit b2c81d0a0e39416d7e449008ed42651f333f4801
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 14:13:45 2024 +0530
+
+    signature
+
+commit 52b6a44b2d79dc42afbfb02fafd7f05c2ab150fc
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 00:41:47 2024 +0530
+
+    Home button image processing
+
+commit ae59dbce7ff08fb83a204f76e49b415af7b52a71
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 00:40:51 2024 +0530
+
+    Image dist
+
+commit bb2f7b3a2cc7970b7b9856457bf02147f3b55014
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 00:35:05 2024 +0530
+
+    PCA
+
+commit ada0b4552c75241b5aba89d2676cab391966f1f4
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Mon Nov 25 00:16:59 2024 +0530
+
+    pathlib
+
+commit 2ed15a1891a2797f4f70477f7d73f62b531d2947
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Sun Nov 24 23:33:22 2024 +0530
+
+    Markov
+
+commit 37a81e2e6a6c816ba3f8be8433627cb0731efe66
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Sun Nov 24 21:03:00 2024 +0530
+
+    did some
+
+commit eaf8812ca45959547e712d089470c0b3983f1e9a
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Sun Nov 24 20:16:50 2024 +0530
+
+    plotly
+
+commit 32efdddb683115d3800ff634cb0d471a7a90fd61
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Sun Nov 24 20:09:38 2024 +0530
+
+    css
+
+commit d172a4e2d625fedcfc977c1ef9d637c8e21b22f4
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Sun Nov 24 17:35:18 2024 +0530
+
+    exponential me mean 0 kr diya tha
+
+commit 6179e863346e0c4083aaedebc5db7e808689c655
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Sun Nov 24 17:17:01 2024 +0530
+
+    b
+
+commit 9d228a1980b7581b0f4f6ff57b6918194a2d8cca
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Sun Nov 24 17:16:15 2024 +0530
+
+    lib
+
+commit 5fe450813669f04864e84402472fe061f2bdfd42
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Sun Nov 24 17:00:58 2024 +0530
+
+    styling
+
+commit 54c5135bfef8621dff4557f3d1ca68085511345a
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Sun Nov 24 16:45:08 2024 +0530
+
+    Did a lot of changes by removing redundant libraries
+
+commit e98b1444b9075ec4465d129fb1ae50bcb0ae2775
+Merge: 5677513 224d394
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Sun Nov 24 11:02:31 2024 +0530
+
+    Merge branch 'main' of https://github.com/Gupta-Kartik-IIITV/WebIIITV
+
+commit 5677513e17e8967bf16f444f2f4e70c72ecf06a4
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Sun Nov 24 11:02:18 2024 +0530
+
+    Done Some Changes
+
+commit 224d394254c5ed638e20a74dd74561fc23a83d21
+Author: abhinavchhajed <abhinavchhajed05@gmail.com>
+Date:   Sun Nov 24 10:07:59 2024 +0530
+
+    ck
+
+commit be59845820c5471396fae0e63a380693535ae3e5
+Author: abhinavchhajed <abhinavchhajed05@gmail.com>
+Date:   Sun Nov 24 09:55:00 2024 +0530
+
+    chu
+
+commit db77a4d49c47dc167b26334caa12d72bb21d34c0
+Merge: 0d86266 81bd726
+Author: abhinavchhajed <abhinavchhajed05@gmail.com>
+Date:   Wed Nov 20 13:41:18 2024 +0530
+
+    Merge branch 'main' of https://github.com/Gupta-Kartik-IIITV/WebIIITV
+
+commit 0d8626672189d6af87c9542062d4f35e2130dc0d
+Author: abhinavchhajed <abhinavchhajed05@gmail.com>
+Date:   Wed Nov 20 13:39:52 2024 +0530
+
+    Laplacian plots
+
+commit 81bd726242b59ec2bb9ff3460b4277d4ecb93575
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 19 16:32:10 2024 +0530
+
+    MATLAB for MA folder
+
+commit d86f2fb9a8b6de88a2fab9ece1ab4f630976a348
+Merge: 8ccf8c3 60c2e18
+Author: abhinavchhajed <abhinavchhajed05@gmail.com>
+Date:   Fri Nov 15 07:23:02 2024 +0530
+
+    Merge branch 'main' of https://github.com/Gupta-Kartik-IIITV/WebIIITV
+
+commit 8ccf8c33dcde32b97eeca06b8002fad064e6b48a
+Author: abhinavchhajed <abhinavchhajed05@gmail.com>
+Date:   Fri Nov 15 07:22:56 2024 +0530
+
+    abhinav Start
+
+commit 60c2e1835bfdd479bc792bc91f008d8834d1e19f
+Author: kartik-gupta-iiitv <202351056@iiitvadodara.ac.in>
+Date:   Thu Nov 14 14:04:22 2024 +0530
+
+    Uniform dist
+
+commit e858dd527843044c98be9500547a18d97e626147
+Author: kartik-gupta-iiitv <202351056@iiitvadodara.ac.in>
+Date:   Thu Nov 14 11:58:06 2024 +0530
+
+    uniformDistribution started
+
+commit d3766613c13c62101ce0cd1aa6fc6bcfb8d77808
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Thu Nov 14 01:44:10 2024 +0530
+
+    scipy in requirements.txt
+
+commit 22d6328d4dcf798831b8c326498d0b0147f05482
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Thu Nov 14 01:41:26 2024 +0530
+
+    probability page add 3d gaussian
+
+commit c07777d386da64eded4ee7f6cd9c3670e3bca68c
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Thu Nov 14 01:39:45 2024 +0530
+
+    Image and 3d gaussian
+
+commit a5d90f0f9332b441dc6cf4c1115870965bd270f7
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 13 13:54:34 2024 +0530
+
+    image dist plot
+
+commit 8f3c405384ac31eb263d5ddcd8ef9222e6b0b59e
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 13 13:40:22 2024 +0530
+
+    Image dist
+
+commit 94cb6de3aa954732a92ad529453545f9ca036ff4
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 13 00:18:39 2024 +0530
+
+    pyperclip
+
+commit 06207d03e6dbff101a70612e779278242523c805
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Wed Nov 13 00:10:41 2024 +0530
+
+    Changed Requirements.txt
+
+commit 62e3547a421dd279d8ec4ae49e2c5eea8779ea84
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 23:24:19 2024 +0530
+
+    Requirements.txt
+
+commit 1cf250b040208b24a9d85b2f0899511c349f1df3
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 23:21:51 2024 +0530
+
+    Added Exponential Distribution and also added CDF functions of all the distributions
+
+commit bb7f86d5519229a200a14e8045908c2e15d5543d
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 21:17:55 2024 +0530
+
+    Somethin
+
+commit af3d84d31a1590fdde9153c17473c3d3dab0e187
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 21:06:45 2024 +0530
+
+    Laplacian Plot done with axis sliders
+
+commit 1eb79f7953b93a08b320290046a01e29f0ba0e1b
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 19:55:52 2024 +0530
+
+    Did something
+
+commit c8b64e1e7446c294c05cb6042e22b4f1066a30bf
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 19:21:23 2024 +0530
+
+    Added Description to Gaussian Curve
+
+commit 673e9ff91d8ec7710b8a15c747ccc2d0e4d11204
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 15:09:58 2024 +0530
+
+    Comments have been removed
+
+commit 793d7b6217cd964dbf27df8ccf9e502e4ac12db5
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 15:04:09 2024 +0530
+
+    Added gaussian Distribution
+
+commit f654888d256f74b86aea63d5ab5c830745fb5919
+Merge: eddfb50 0bd1403
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 14:16:34 2024 +0530
+
+    Merge branch 'main' of https://github.com/Gupta-Kartik-IIITV/WebIIITV
+
+commit eddfb502a4766426b54ffdb0275a05337d3bc463
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 14:16:29 2024 +0530
+
+    Added the probability page and also hid the sidebar that appeared in case of every multipage webapp
+
+commit 0bd1403995ff3459a60da39a74c6802f96d47e2c
+Author: abhinavchhajed <abhinavchhajed05@gmail.com>
+Date:   Tue Nov 12 10:39:54 2024 +0530
+
+    Check
+
+commit a7af5a168f5605a7a2361b78e47bdc43be35d2e0
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 10:35:05 2024 +0530
+
+    Hello
+
+commit 06eba301a4904339e7c45d0e7762875d72756d62
+Author: Gupta-Kartik-IIITV <202351056@iiitvadodara.ac.in>
+Date:   Tue Nov 12 10:33:28 2024 +0530
+
+    Start
