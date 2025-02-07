@@ -21,8 +21,6 @@ st.markdown("""
     <a href="GaussianDistribution" target="_self" class = "button-container-probability">Gaussian Distribution</a>
     <a href="LaplacianDistribution" target="_self" class = "button-container-probability">Laplacian Distribution</a>
     <a href="ExponentialDistribution" target="_self" class = "button-container-probability">Exponential Distribution</a>
-    
-    
 </div>
 """, unsafe_allow_html=True)
 
