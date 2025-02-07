@@ -5,7 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pathlib
 
-st.set_page_config(page_title="Central Limit Theorem", page_icon="logo (1).png", layout="wide")
+st.set_page_config(page_title="Bivariate Laplacian Distribution", initial_sidebar_state="collapsed", page_icon="logo (1).png", layout="wide")
 
 
 def load_css(file):
