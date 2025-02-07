@@ -6,8 +6,7 @@ import imageio.v3 as im
 import time
 
 # Set page configuration
-st.set_page_config(page_title="Image Distribution", initial_sidebar_state="collapsed", 
-                   page_icon="logo (1).png", layout="wide")
+st.set_page_config(page_title="Image Distribution", initial_sidebar_state="collapsed", page_icon="logo (1).png", layout="wide")
 
 # Load CSS for styling
 def load_css(file):

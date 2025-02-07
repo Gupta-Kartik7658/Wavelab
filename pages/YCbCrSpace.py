@@ -7,8 +7,7 @@ import time
 from PIL import Image
 
 # Set page configuration
-st.set_page_config(page_title="Colour Space Conversion", initial_sidebar_state="collapsed", 
-                   page_icon="logo (1).png", layout="wide")
+st.set_page_config(page_title="Colour Space Conversion", initial_sidebar_state="collapsed", page_icon="logo (1).png", layout="wide")
 
 # Load CSS for styling
 def load_css(file):

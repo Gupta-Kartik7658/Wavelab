@@ -3,7 +3,7 @@ import numpy as np
 import plotly.express as px
 import pathlib
 
-st.set_page_config(page_title="WeakLawOfLargeNumbers", initial_sidebar_state="collapsed", page_icon="logo (1).png", layout="wide")
+st.set_page_config(page_title="Weak Law Of Large Numbers", initial_sidebar_state="collapsed", page_icon="logo (1).png", layout="wide")
 
 def load_css(file):
     try:

@@ -2,7 +2,7 @@ import streamlit as st
 import pathlib
 from PIL import Image
 import base64
-st.set_page_config(page_title="WaveLab",initial_sidebar_state="collapsed",page_icon="logo (1).png")
+st.set_page_config(page_title="WaveLab",initial_sidebar_state="collapsed",page_icon="logo (1).png",layout="wide")
 
 def load_css(file):
     with open(file) as f:
