@@ -23,7 +23,7 @@ st.markdown("""
 <div class = "button-container">
     <a href="CentralLimitTheorem" target="_self" class = "button-container-probability">Central Limit Theorem</a>
     <a href="WeakLawOfLargeNumbers" target="_self" class = "button-container-probability">Weak Law of Large Numbers</a>
-    <a href="MinimumMeanSqaureEstimation" target="_self" class = "button-container-probability">MMSE Line Fiting</a>
+    <a href="MinimumMeanSquareEstimation" target="_self" class = "button-container-probability">MMSE Line Fiting</a>
 </div>
 """, unsafe_allow_html=True)
 
