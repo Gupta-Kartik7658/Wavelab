@@ -10,7 +10,7 @@ def load_css(file):
     except FileNotFoundError:
         st.error("CSS file not found.")
 
-csspath = pathlib.Path("Kartik\\style.css")
+csspath = pathlib.Path("style.css")
 load_css(csspath)
 
 st.markdown(f"""
