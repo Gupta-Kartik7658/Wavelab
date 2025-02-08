@@ -80,14 +80,18 @@ c = st.slider("Intercept (c) of the Line: Y = mX + c",min_value=0.0,max_value=10
 
 Y0 = m*X + c
 Y = m*X + c + Noise 
-
-Y_cap = np.mean(Y) + (np.cov(X,Y)[0][1]/np.var(X))*(X - np.mean(X))
-# st.write(Y_cap.shape)
+a_o = np.cov(X,Y)[0][1]/np.var(X)
+b_o = np.mean(Y) - (a_o * np.mean(X))
+Y_cap = a_o*X + b_o
+col = st.columns(3)
+col[0].metric(label="Optimal Slope ($a_o$)", value=str(round(a_o,3)))
+col[1].metric(label="Optimal Intercept ($b_o$)", value=str(round(b_o,3)))
+col[2].metric(label="Mean Square Error $E((\\hat{Y}-Y)^2)$", value=str(round(np.mean(np.dot(Y-Y0,Y-Y0)),2)))
 
 data = pd.DataFrame({
     "x": list(X) + list(X),
     "y": list(Y) + list(Y_cap),
-    "category": ["Y"] * len(X) + ["Y_cap"] * len(X),
+    "category": ["Y"] * len(X) + ["Y_hat"] * len(X),
     "size": [15] * (2*len(X))
 })
 
@@ -131,8 +135,64 @@ with col[1]:
     )
     st.plotly_chart(fig2)  
     
+    import streamlit as st
+
+st.markdown('''
+            <style>
+                *{
+                    font-size:20px
+                }
+            </style>
+        <br>
+        Minimum Mean Square Error (MMSE) estimation for line fitting is a fundamental concept in statistics and machine learning. It provides an optimal way to fit a linear model to data by minimizing the mean squared error between predicted and observed values.
+
+        ### Minimum Mean Square Error Estimation
+        The goal of MMSE estimation is to find the optimal line:
+        $$
+        y = mx + c
+        $$
+        where:
+        - $m$ is the **slope** of the line.
+        - $c$ is the **intercept** of the line.
+
+        The **MMSE estimation** minimizes the following error:
+        $$
+        \\text{MSE} = \\frac{1}{n} \\sum_{i=1}^n (y_i - (mx_i + c))^2
+        $$
+
+        ### Optimal Slope and Intercept
+        The optimal values of $m$ and $c$ can be expressed in terms of **expectations, variances, and covariances**:
+
+        1. **Optimal Slope $a_o$**:
+        $$
+        a_o = \\frac{\\text{Cov}(x, y)}{\\text{Var}(x)}
+        $$
+
+        2. **Optimal Intercept $b_o$**:
+        $$
+        b_o = \\mathbb{E}[y] - m \\mathbb{E}[x]
+        $$
+
+        Where:
+        - $ \\text{Cov}(x, y) = \\mathbb{E}[xy] - \\mathbb{E}[x]\\mathbb{E}[y] $ is the **covariance** between $x$ and $y$.
+        - $ \\text{Var}(x) = \\mathbb{E}[x^2] - (\\mathbb{E}[x])^2 $ is the **variance** of $x$.
+        - $ \\mathbb{E}[x] $ and $ \\mathbb{E}[y] $ are the **expectations (means)** of $x$ and $y$.
+
+        ### MMSE Fitted Line
+        The fitted line using MMSE is given by:
+        $$
+        \\hat{y} = a_o x + b_o
+        $$
+
+        ### Applications
+        MMSE estimation for line fitting is widely used in:
+        - Regression analysis to model relationships between variables.
+        - Machine learning for supervised learning tasks.
+        - Signal processing and time-series analysis.
+        - Data science to analyze trends and patterns in data.
+
+        This method is crucial for understanding and modeling linear relationships in data and forms the basis for many advanced statistical and machine learning techniques.
+''', unsafe_allow_html=True)
 
 
 
-  
-  
