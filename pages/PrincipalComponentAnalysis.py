@@ -87,7 +87,7 @@ data_option = st.sidebar.radio("Choose Data Source:", ["Generate Random Data", "
 
 if data_option == "Generate Random Data":
     n_samples = st.sidebar.slider("Number of Samples:", 100, 10000, 1000)
-    n_features = st.sidebar.slider("Number of Features:", 2, 10, 3)
+    n_features = st.sidebar.slider("Number of Features:", 3, 10, 3)
     data = np.random.randn(n_samples, n_features)  # Normally distributed data
 else:
     uploaded_file = st.sidebar.file_uploader("Upload your CSV file:", type=["csv"])
