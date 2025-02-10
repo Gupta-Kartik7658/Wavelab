@@ -2,7 +2,17 @@ import streamlit as st
 import pathlib
 from PIL import Image
 import base64
+import os
+
+
+
 st.set_page_config(page_title="WaveLab",initial_sidebar_state="collapsed",page_icon="logo (1).png",layout="wide")
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8501))
+    st._is_running_with_streamlit = False  # This prevents Streamlit from running its default server
+    from streamlit.web import cli as stcli  # Use Streamlit CLI to start the app
+    stcli.main(["streamlit", "run", "Wavelab.py", "--server.port", str(port), "--server.address", "0.0.0.0"])
 
 def load_css(file):
     with open(file) as f:

@@ -1,18 +1,18 @@
 {
     "builds": [
       {
-        "src": "app.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "50mb"
-        }
+        "src": "Wavelab.py",
+        "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "app.py"
+        "dest": "Wavelab.py"
       }
-    ]
+    ],
+    "env": {
+      "PORT": "8501"
+    }
   }
   
