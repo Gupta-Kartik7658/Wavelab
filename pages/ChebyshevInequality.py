@@ -28,7 +28,7 @@ with col1:
     st.markdown('''
     ### Chebyshev's Statement
     Chebyshev's Inequality states that for any random variable $$X$$ with a finite mean $$\\mu$$ and variance $$\\sigma^2$$, 
-    the probability that $$X$$ lies within $$k$$ standard deviations of the mean is at least $$\\frac{1}{k^2}$$, where $$k > 1$$. 
+    the probability that $$X$$ lies within $$k$$ standard deviations of the mean is at most $$\\frac{1}{k^2}$$, where $$k > 1$$. 
     Mathematically:
 
     $$ 
