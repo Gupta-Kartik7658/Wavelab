@@ -1,178 +1,125 @@
-[data-testid="stSidebar"],
+[data-testid="stSidebar"]{
+    visibility: hidden;
+}
 [data-testid="stBaseButton-headerNoPadding"] {
     visibility: hidden;
 }
 
 .large-font {
-    font-size: 2em;
+    font-size: 24px;
 }
 
-.title-container,
-.title-container-new {
-    padding: 3em 1em 1em;
+/* Restrict the graph's width to between 25% and 75% of the page */
+
+
+
+.title-container {
+    padding: 40px 0 20px;
     text-align: center;
     color: white;
     position: relative;
-    margin-top: -60px;
-    margin-bottom: -30px;
+    margin-top: -100px; /* Decrease the gap between the logo and text */
+    margin-bottom: -40px;
+}
+.title-container-new {
+    padding: 40px 0 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-bottom: -40px;
+}
+.title-container-new h2,
+.title-container h2{
+    font-size:45px;
 }
 
-.title-container h1,
-.title-container-new h1 {
-    font-size: 3em;
+
+
+.logo-pop {
+    justify-content: center;
+    align-items: center;
+    background-color: #05162C;
+    width: 300px; /* Increase size of the logo */
+    height: 300px; /* Make height equal to width to maintain circular shape */
+    border-radius: 50%; /* Makes the logo rounded but not fully circular */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+    margin-top: 40px;
+}
+
+.logo-pop:hover {
+    justify-content: center;
+    align-items: center;
+    animation: pop 3s infinite;
+}
+
+.title-container-new h1,
+.title-container h1 {
+    font-size: 50px;
     font-weight: bold;
     margin: 0;
 }
 
-.title-container h2,
-.title-container-new h2 {
-    font-size: 2.8em;
-}
-
-.title-container p,
-.title-container-new p {
-    font-size: 1.3em;
-    margin-top: 0.5em;
-}
-
-.logo-pop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #05162C;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 40px auto;
-}
-
-.logo-pop:hover {
-    animation: pop 3s infinite;
+.title-container-new p,
+.title-container p {
+    font-size: 1.5em; /* Increased subtitle font size */
+    margin-top: 10px;
 }
 
 .button-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5em;
-    margin-top: 2em;
+    justify-content: center; /* Centers the buttons */
+    gap: 20px; /* Adds space between the buttons */
+    margin-top: 20px; /* Adds space between the text and buttons */
 }
 
 .button-container-probability,
 .button-container-statistics,
 .button-container-physics {
-    background-color: #05162C;
+    display: inline-flexbox;
+    text-decoration: none; /* Removes the underline */
+    background-color: #05162C; /* Button color */
     color: white;
-    text-decoration: none;
+    padding: 609x 609x; /* Adjust padding to keep button size balanced */
     border-radius: 8px;
-    font-size: 1.8em;
+    font-size: 30px; /* Increased button font size */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
-    width: 20vw;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 15.6vw;
+    height: 35vh;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
     text-align: center;
-    padding: 1em;
 }
 
-/* Hover effect */
+
+.button-container-probability {
+    margin-right: 15px;
+}
+
+.button-container-statistics {
+    margin: 0 15px;
+}
+
+.button-container-physics {
+    margin-left: 15px;
+}
+
 .button-container a:hover {
     text-decoration: none;
+    /* font-weight: lighter; */
+    /* background-color: #102B4A; Button hover color */
     color: #FF4B4B;
 }
 
-/* Pop animation */
 @keyframes pop {
     0%, 100% {
-        transform: scale(1);
+        transform: scale(1); /* Normal size */
     }
     40% {
-        transform: scale(1.1);
+        transform: scale(1.1); /* Pop size (20% bigger) */
     }
     60% {
-        transform: scale(1);
-    }
-}
-
-/* Responsive design */
-@media (max-width: 1200px) {
-    .button-container-probability,
-    .button-container-statistics,
-    .button-container-physics {
-        width: 25vw;
-        height: 25vh;
-    }
-
-    .logo-pop {
-        width: 180px;
-        height: 180px;
-    }
-
-    .title-container h1,
-    .title-container-new h1 {
-        font-size: 2.5em;
-    }
-}
-
-@media (max-width: 768px) {
-    .button-container-probability,
-    .button-container-statistics,
-    .button-container-physics {
-        width: 40vw;
-        height: 25vh;
-        font-size: 1.2em;
-    }
-
-    .logo-pop {
-        width: 140px;
-        height: 140px;
-    }
-
-    .title-container h1,
-    .title-container-new h1 {
-        font-size: 2em;
-    }
-
-    .title-container h2,
-    .title-container-new h2 {
-        font-size: 1.6em;
-    }
-
-    .title-container p,
-    .title-container-new p {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 480px) {
-    .button-container-probability,
-    .button-container-statistics,
-    .button-container-physics {
-        width: 80vw;
-        height: 20vh;
-        font-size: 1em;
-    }
-
-    .logo-pop {
-        width: 100px;
-        height: 100px;
-    }
-
-    .title-container h1,
-    .title-container-new h1 {
-        font-size: 1.8em;
-    }
-
-    .title-container h2,
-    .title-container-new h2 {
-        font-size: 1.4em;
-    }
-
-    .title-container p,
-    .title-container-new p {
-        font-size: 0.9em;
+        transform: scale(1); /* Pop size (20% bigger) */
     }
 }

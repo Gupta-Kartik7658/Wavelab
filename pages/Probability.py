@@ -41,7 +41,7 @@ st.markdown("""
 
 st.markdown(f"""
         <div class="title-container-new">
-            <h2>Inequality Theorems and Convergence Theorems</h2>
+            <h2>Inequality Theorems</h2>
         </div>
         """, unsafe_allow_html=True)
 
@@ -50,6 +50,5 @@ st.markdown("""
 <div class = "button-container">
     <a href="ChebyshevInequality" target="_self" class = "button-container-probability">Chebyshev's Inequality</a>
     <a href="MarkovInequality" target="_self" class = "button-container-probability">Markov's Inequality</a>
-    <a href="ExpectationConvergence" target="_self" class = "button-container-probability">Expectation Value Convergence</a>
 </div>
 """,unsafe_allow_html=True)
