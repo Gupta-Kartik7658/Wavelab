@@ -46,13 +46,6 @@ st.markdown("""
     <a href="ImageProcessing" target="_self" class = "button-container-physics">Image Processing</a>
 </div>
 """, unsafe_allow_html=True)
-st.markdown("""
-<div class = "button-container">
-    <a href="Probability" target="_self" class = "button-container-probability">Numerical Techniques</a>
-    <a href="Statistics" target="_self" class = "button-container-statistics">Linear Algebra</a>
-    <a href="Physics" target="_self" class = "button-container-physics">Physics</a>
-</div>
-""", unsafe_allow_html=True)
 
 st.markdown(
     f"""
