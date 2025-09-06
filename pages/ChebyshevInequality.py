@@ -100,7 +100,7 @@ with col2:
         where=(x_vals >= lower_bound) & (x_vals <= upper_bound),
         color="blue",
         alpha=0.5,
-        label = "Leftover Probability",
+        label = "Enclosed Probability",
     )
     ax.fill_between(
         x_vals,
@@ -108,7 +108,7 @@ with col2:
         where=(x_vals < lower_bound) | (x_vals > upper_bound),
         color="red",
         alpha=0.5,
-        label = "Enclosed Probability",
+        label = "Leftover Probability",
     )
 
     # Annotate lines
